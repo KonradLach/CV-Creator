@@ -14,12 +14,14 @@ class Education extends Component {
                     <div className="form-inline" key={index}>
                         <label>School Name</label>
                         <input value={element.schoolName || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="schoolName" name='schoolName' />
-                        <label>From (mm/yy)</label>
-                        <input value={element.startYear || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="startYear" name='startYear' />
-                        <label>To (mm/yy)</label>
-                        <input value={element.endYear || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="endYear" name='endYear' />
+                        <label>From</label>
+                        <input value={element.startYear || ""} onChange={e => this.props.handleChange(index, e)} type="month" id="startYear" name='startYear' />
+                        <label>To</label>
+                        <input value={element.endYear || ""} onChange={e => this.props.handleChange(index, e)} type="month" id="endYear" name='endYear' />
                         <label>Degree</label>
                         <input value={element.degree || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="degree" name='degree' />
+                        <label>GPA</label>
+                        <input value={element.gpa || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="gpa" name='gpa' maxLength="4" pattern="/d*"/>
                         {
                             index ? 
                             <button type="button"  className="button remove" onClick={() => this.props.removeField(index)}>Remove</button> 

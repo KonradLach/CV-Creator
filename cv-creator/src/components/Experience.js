@@ -18,10 +18,10 @@ class Experience extends Component {
                         <input value={element.position || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="position" name='position' />
                         <label>City</label>
                         <input value={element.city || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="city" name='city' />
-                        <label>From (mm/yy)</label>
-                        <input value={element.startYear || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="startYear" name='startYear' />
-                        <label>To (mm/yy)</label>
-                        <input value={element.endYear || ""} onChange={e => this.props.handleChange(index, e)} type="text" id="endYear" name='endYear' />
+                        <label>From</label>
+                        <input value={element.startYear || ""} onChange={e => this.props.handleChange(index, e)} type="month" id="startYear" name='startYear' />
+                        <label>To</label>
+                        <input value={element.endYear || ""} onChange={e => this.props.handleChange(index, e)} type="month" id="endYear" name='endYear' />
                         {
                             index ? 
                             <button type="button"  className="button remove" onClick={() => this.props.removeField(index)}>Remove</button> 
