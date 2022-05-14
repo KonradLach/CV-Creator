@@ -15,17 +15,20 @@ class Resume extends Component{
                         <h3>{this.props.phone}</h3>
                     </div>
                 </div>
-                <div className="education">
+                <div className="education section">
+                    Education
                     {this.props.educationValues.map((education,index) => (
                         <div key={index}>
-                            <h4 className="schoolName">{education.schoolName} </h4> {education.degree} {education.startYear} {education.endYear} {education.gpa}
+                            <div className='componentHeader'> <h4 className="schoolName">{education.schoolName} </h4> <h4 className="dates">{education.startYear} - {education.endYear}</h4> </div> 
+                            <div className="info"><text className="degree">{education.degree}</text>  <text className='gpa'>GPA: {education.gpa}</text> </div>
                         </div>
                     ))}
                 </div>
-                <div className="experience">
+                <div className="experience section">
+                    Professional Experience
                     {this.props.experienceValues.map((experience,index) => (
                         <div key={index}>
-                            {experience.companyName} {experience.position} {experience.startYear} {experience.endYear} {experience.city}
+                            <div className='componentHeader'><h4 className="schoolName">{experience.companyName}</h4><h4 className="dates">{experience.startYear} {experience.endYear} </h4></div> {experience.position} {experience.city}
                         </div>
                     ))}
                 </div>

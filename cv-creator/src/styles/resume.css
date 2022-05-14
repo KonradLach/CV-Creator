@@ -1,6 +1,7 @@
 .resume{
     border: 1px solid black;
-    margin: 10px
+    width:210mm;
+    margin: auto;
 }
 
 .generalInfo > h2{
@@ -18,4 +19,41 @@
 .generalInfo div h3{
     margin: 20px;
     font-size: 16px;
+}
+
+.section{
+    border-top: 2px black solid;
+    
+}
+
+.dates{
+    text-align: end;
+    width: 90mm;
+}
+
+h4{
+    margin: 0;
+    display: inline-block;
+}
+.schoolName{
+    width: 100mm;
+}
+.componentHeader{
+    margin: 10px 20px;
+}
+
+.info{
+    margin: 0 20px;
+}
+
+.degree{
+    width: 100mm;
+    font-style: italic;
+}
+.gpa{
+    width: 90mm;
+    text-align: end;
+}
+text{
+    display: inline-block;
 }
