@@ -1,14 +1,19 @@
 .resume{
     border: 1px solid black;
-    width:210mm;
+    width:215.9mm;
     margin: auto;
+    height: 279.4mm;
+    background-color: white;
+    margin-bottom: 50px;
+    box-shadow: rgba(102, 101, 101, 0.7) 0px 7px 29px 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .generalInfo > h2{
-    margin: 10px;
+    margin: 40px 0px 0px;
     text-align: center;
     display: block;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .generalInfo div{
@@ -17,18 +22,20 @@
     justify-content: center;
 }
 .generalInfo div h3{
-    margin: 20px;
+    margin: 10px;
     font-size: 16px;
 }
 
 .section{
     border-top: 2px black solid;
-    
+    width: 190mm;
+    margin: auto;
 }
 
 .dates{
     text-align: end;
-    width: 90mm;
+    width: 88mm;
+    font-weight: normal;
 }
 
 h4{
@@ -39,20 +46,21 @@ h4{
     width: 100mm;
 }
 .componentHeader{
-    margin: 10px 20px;
+    margin: 10px 0px;
 }
 
 .info{
-    margin: 0 20px;
+    margin: 0;
 }
 
-.degree{
+.left{
     width: 100mm;
     font-style: italic;
 }
-.gpa{
-    width: 90mm;
+.right{
+    width: 88mm;
     text-align: end;
+    margin-bottom: 10px;
 }
 text{
     display: inline-block;

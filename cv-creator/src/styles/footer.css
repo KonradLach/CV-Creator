@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #333;
+    color: azure;
+
+}
+
+.footer p {
+    text-align: center;
+    padding: 0;
+}
+.fa-github {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    color: rgb(255, 253, 253);
+}
+
+.fa-linkedin {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    color: #0575ff;
+}
